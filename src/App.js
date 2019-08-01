@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import ReactHook from './ReackHook';
 
 class App extends Component {
   // Initialization
-  constructor(props, state){
-    super(props, state);
-    this.state = { count:0 };
+  constructor(props){
+    super(props);
+    this.state = { 
+      count:0 
+    };
   };
   render() {
     const {count} = this.state;  // destructuring
